@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+
+.title {
+  @include title;
+}
+
+.label {
+  margin: 20px 0 6px 0;
+}
+
+.button {
+  margin-top: 20px;
+}

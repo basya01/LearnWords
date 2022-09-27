@@ -1,0 +1,32 @@
+@import '../../variables.scss';
+
+.root {
+  border-collapse: collapse;
+
+  thead {
+    background: $bright-blue;
+  }
+
+  tr {
+    border-bottom: $table-border;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    td,
+    th {
+      text-align: center;
+      width: 500px;
+      padding: 7px 0;
+    }
+
+    td:nth-child(odd) {
+      border-right: $table-border;
+    }
+
+    th {
+      color: $white;
+    }
+  }
+}

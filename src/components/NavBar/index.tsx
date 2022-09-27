@@ -22,7 +22,7 @@ const NavBar = () => {
         <h1 className={styles.logo}>LearnWords</h1>
         <ul className={styles.list}>
           {elems.map((elem) => (
-            <Link to={elem.to}>
+            <Link to={elem.to} key={elem.id}>
               <li
                 className={active === elem.id ? styles.active : ''}
                 onClick={() => setActive(elem.id)}>

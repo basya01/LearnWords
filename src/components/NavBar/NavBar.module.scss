@@ -26,6 +26,7 @@
     color: $white;
     display: flex;
     align-items: center;
+    height: 25px;
 
     img {
       margin-right: 15px;
@@ -34,8 +35,8 @@
 
   .active::after {
     content: '';
-    height: 32px;
-    top: -6px;
+    height: 41px;
+    top: -8px;
     left: -25px;
     position: absolute;
     width: 5px;

@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+
+.root {
+  display: block;
+  border: none;
+  background: $bright-blue;
+  color: $white;
+  padding: 12px 29px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: $font-family;
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+@import '../../variables.scss';
+
+.root {
+  border: none;
+  background: $gray;
+  padding: 12px 20px;
+  border-radius: 15px;
+  font-size: 16px;
+}
