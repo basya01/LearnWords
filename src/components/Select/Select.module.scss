@@ -1,0 +1,27 @@
+@import '../../variables.scss';
+
+.root {
+  position: relative;
+}
+
+.options {
+  border-radius: 20px;
+  background: $gray;
+  position: absolute;
+  height: 200px;
+  overflow-y: auto;
+  top: calc(100% + 5px);
+}
+
+.option {
+  padding: 8px 25px;
+  cursor: pointer;
+  
+  &:hover {
+    background: $dark-gray;
+  }
+}
+
+.active {
+  color: $bright-blue;
+}

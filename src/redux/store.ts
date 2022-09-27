@@ -1,8 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
 import dictionary from './slices/dictionary';
+import check from './slices/check';
 
 const store = configureStore({
-  reducer: { dictionary },
+  reducer: { dictionary, check },
 });
 
 export type RootState = ReturnType<typeof store.getState>;
