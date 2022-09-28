@@ -1,0 +1,11 @@
+.foreign {
+  font-size: 80px;
+  text-align: center;
+}
+
+.options {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}

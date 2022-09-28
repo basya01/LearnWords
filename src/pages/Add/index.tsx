@@ -1,4 +1,4 @@
-import React, { FormEvent, useState } from 'react';
+import React, { createRef, FormEvent, useRef, useState } from 'react';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
 import { useAppDispatch } from '../../hooks/redux';
@@ -9,8 +9,11 @@ const Add = () => {
   const [word, setWord] = useState({ foreign: '', translated: '' });
   const dispatch = useAppDispatch();
 
+  const foreignInput = createRef<HTMLInputElement>();
+
   const onSubmitAdd = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    foreignInput.current?.focus();
 
     if (word.foreign && word.translated) {
       dispatch(addWord({ id: Date.now(), ...word }));
@@ -26,6 +29,7 @@ const Add = () => {
       <form action="" onSubmit={(e) => onSubmitAdd(e)}>
         <p className={styles.label}>Foreign</p>
         <Input
+          ref={foreignInput}
           value={word.foreign}
           name="foreign"
           onChange={(e) => setWord(({ translated }) => ({ foreign: e.target.value, translated }))}

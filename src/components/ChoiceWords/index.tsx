@@ -14,7 +14,7 @@ const ChoiceWords = () => {
   return (
     <>
       <h2 className={styles.title}>Check words</h2>
-      <p>Select 10 words to begin</p>
+      <p>Select at least 10 words to begin</p>
       <div className={styles.buttons}>
         <Select />
         <Button

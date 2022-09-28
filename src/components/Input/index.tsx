@@ -1,15 +1,15 @@
-import React, { FC, InputHTMLAttributes } from 'react';
+import React, { FC, forwardRef, InputHTMLAttributes, RefObject } from 'react';
 import clsx from 'clsx';
 import styles from './Input.module.scss';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-  className?: string; 
+  className?: string;
 }
 
-const Input: FC<InputProps> = ( { className,...props } ) => {
-  return (
-    <input className={clsx(className, styles.root)} {...props} />
-  );
-};
+const Input = forwardRef<HTMLInputElement, InputProps>(
+  ({ className, ...props }, ref) => {
+    return <input ref={ref} className={clsx(className, styles.root)} {...props} />;
+  },
+);
 
 export default Input;

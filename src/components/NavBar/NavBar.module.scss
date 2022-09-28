@@ -1,13 +1,15 @@
 @import '../../variables.scss';
 
 .root {
-  background-color: $dark-blue;
   height: 100vh;
 }
 
 .container {
+  position: fixed;
+  height: 100vh;
+  background-color: $dark-blue;
   width: 200px;
-  margin: 35px auto 0 auto;
+  padding: 35px 0 0 25px;
 }
 
 .logo {

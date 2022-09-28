@@ -1,0 +1,22 @@
+@import '../../variables.scss';
+
+.title {
+  @include title;
+  text-align: center;
+}
+
+.result {
+  font-size: 80px;
+}
+
+.bad {
+  color: #ce0c0c;
+}
+
+.good {
+  color: #dada0d;
+}
+
+.excellent {
+  color: #008000;
+}
