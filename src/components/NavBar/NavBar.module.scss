@@ -18,10 +18,9 @@
 }
 
 .list {
-  margin-top: 54px;
+  margin-top: 46px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
 
   li {
     position: relative;
@@ -29,6 +28,7 @@
     display: flex;
     align-items: center;
     height: 25px;
+    padding: 8px 0;
 
     img {
       margin-right: 15px;
@@ -38,7 +38,7 @@
   .active::after {
     content: '';
     height: 41px;
-    top: -8px;
+    top: 0;
     left: -25px;
     position: absolute;
     width: 5px;

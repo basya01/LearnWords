@@ -4,16 +4,18 @@ import styles from './History.module.scss';
 
 const History = () => {
   const history = useAppSelector((state) => state.history);
+  const avarage = history.reduce((sum, item) => sum + item.result, 0) / history.length;
 
   return (
     <>
       <p className={styles.title}>History</p>
+      <p className={styles.avarage}>Avarage: {Math.round(avarage)}%</p>
       {history.length ? (
         <ul>
           {history.map((item) => (
             <li key={item.date} className={styles.item}>
               <p>{item.date}</p>
-              <p>{item.result}%</p>
+              <p>{Math.round(item.result)}%</p>
             </li>
           ))}
         </ul>
