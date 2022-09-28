@@ -1,12 +1,10 @@
-import React from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
-import { Word } from '../../models/Word';
-import Button from '../Button';
-import Select from '../Select';
-import styles from './ChoiceWords.module.scss';
+import { Button, Select } from '../';
 import { GameStatus, setStatus } from '../../redux/slices/check';
 
-const ChoiceWords = () => {
+import styles from './ChoiceWords.module.scss';
+
+export const ChoiceWords = () => {
   const selectedWords = useAppSelector((state) => state.check.words);
 
   const dispatch = useAppDispatch();
@@ -29,5 +27,3 @@ const ChoiceWords = () => {
     </>
   );
 };
-
-export default ChoiceWords;

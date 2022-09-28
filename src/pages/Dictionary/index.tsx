@@ -1,5 +1,4 @@
-import React from 'react';
-import Table from '../../components/Table';
+import { Table } from '../../components';
 import { useAppSelector } from '../../hooks/redux';
 
 import styles from './Dictionary.module.scss';

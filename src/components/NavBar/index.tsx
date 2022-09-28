@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './NavBar.module.scss';
-import dictionary from '../../images/dictionary.svg';
+
 import add from '../../images/add.svg';
 import check from '../../images/check.svg';
-import history from '../../images/add.svg';
+import dictionary from '../../images/dictionary.svg';
+import history from '../../images/history.svg';
 
-const NavBar = () => {
+import styles from './NavBar.module.scss';
+
+export const NavBar = () => {
   const [active, setActive] = useState(0);
 
   const elems = [
@@ -36,5 +38,3 @@ const NavBar = () => {
     </nav>
   );
 };
-
-export default NavBar;

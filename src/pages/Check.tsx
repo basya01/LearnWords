@@ -1,7 +1,6 @@
-import ChoiceWords from '../../components/ChoiceWords';
-import { useAppDispatch, useAppSelector } from '../../hooks/redux';
-import { GameStatus, setStatus } from '../../redux/slices/check';
-import CheckWords from '../../components/CheckWords';
+import { ChoiceWords, CheckWords } from '../components';
+import { useAppSelector } from '../hooks/redux';
+import { GameStatus } from '../redux/slices/check';
 
 const Check = () => {
   const status = useAppSelector((state) => state.check.status);

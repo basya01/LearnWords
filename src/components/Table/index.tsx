@@ -1,8 +1,10 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
+
 import { Word } from '../../models/Word';
+
 import styles from './Table.module.scss';
 
-const Table: FC<{ words: Word[] }> = ({ words }) => {
+export const Table: FC<{ words: Word[] }> = ({ words }) => {
   return (
     <table className={styles.root}>
       <thead>
@@ -22,5 +24,3 @@ const Table: FC<{ words: Word[] }> = ({ words }) => {
     </table>
   );
 };
-
-export default Table;

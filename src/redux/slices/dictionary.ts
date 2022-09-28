@@ -1,5 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
-import type { PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { Word } from '../../models/Word';
 import { getDataLS, setDataLS } from '../../utils/localStorageHelper';
 

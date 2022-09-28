@@ -1,8 +1,9 @@
-import React, { createRef, FormEvent, useRef, useState } from 'react';
-import Button from '../../components/Button';
-import Input from '../../components/Input';
+import { createRef, FormEvent, useState } from 'react';
+
+import { Button, Input } from '../../components';
 import { useAppDispatch } from '../../hooks/redux';
 import { addWord } from '../../redux/slices/dictionary';
+
 import styles from './Add.module.scss';
 
 const Add = () => {

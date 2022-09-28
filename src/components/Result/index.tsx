@@ -1,11 +1,11 @@
 import clsx from 'clsx';
-import React from 'react';
+
 import { useAppSelector } from '../../hooks/redux';
+
 import styles from './Result.module.scss';
 
-const Results = () => {
+export const Result = () => {
   const result = useAppSelector((state) => state.check.result);
-  console.log(result);
 
   return (
     <>
@@ -22,5 +22,3 @@ const Results = () => {
     </>
   );
 };
-
-export default Results;
