@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
@@ -20,7 +20,7 @@ export const CheckWords = () => {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
 
-  const randomWords = addRandomWords(dictionary, shuffleWords.current[index]);
+  const randomWords = useMemo(() => addRandomWords(dictionary, shuffleWords.current[index]), [index]);
 
   const onClickButton = (word: Word) => {
     if (shuffleWords.current[index].id === word.id) {

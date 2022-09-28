@@ -5,7 +5,7 @@ import { useAppSelector } from '../../hooks/redux';
 import styles from './Result.module.scss';
 
 export const Result = () => {
-  const result = useAppSelector((state) => state.check.result);
+  const result = useAppSelector((state) => Math.round(state.check.result));
 
   return (
     <>
