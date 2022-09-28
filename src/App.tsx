@@ -1,11 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
-import './App.scss';
+
 import Add from './pages/Add';
 import Check from './pages/Check';
 import Dictionary from './pages/Dictionary';
 import History from './pages/History';
-import './reset.scss';
 import { NavBar, Result } from './components';
+
+import './App.scss';
+import './reset.scss';
 
 function App() {
   return (
