@@ -4,6 +4,7 @@ import styles from './History.module.scss';
 
 const History = () => {
   const history = useAppSelector((state) => state.history);
+  
   const avarage = history.reduce((sum, item) => sum + item.result, 0) / history.length;
 
   return (

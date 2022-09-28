@@ -6,7 +6,6 @@ import styles from './ChoiceWords.module.scss';
 
 export const ChoiceWords = () => {
   const selectedWords = useAppSelector((state) => state.check.words);
-
   const dispatch = useAppDispatch();
 
   return (

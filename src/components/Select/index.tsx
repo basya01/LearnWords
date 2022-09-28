@@ -14,8 +14,7 @@ interface SelectProps {
 export const Select: FC<SelectProps> = ({ className }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dictionary = useAppSelector((state) => state.dictionary);
-  const { words: selectedWords, status } = useAppSelector((state) => state.check);
-
+  const selectedWords = useAppSelector((state) => state.check).words;
   const dispatch = useAppDispatch();
 
   return (
