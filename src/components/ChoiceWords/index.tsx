@@ -16,9 +16,9 @@ export const ChoiceWords = () => {
         <Select />
         <Button
           onClick={() =>
-            selectedWords.length >= 10
+            selectedWords.length === 10
               ? dispatch(setStatus(GameStatus.CHECK))
-              : alert('Select at least 10 words')
+              : alert('Select 10 words')
           }>
           Start
         </Button>
